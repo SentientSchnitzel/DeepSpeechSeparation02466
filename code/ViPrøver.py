@@ -23,23 +23,15 @@ def loader():
     return train_loader, val_loader
 
 def model_train(train_loader, val_loader):
-    # Tell DPRNN that we want to separate to 2 sources.
-    model = ConvTasNet(n_src=2)
+    model = ConvTasNet(n_src=2) # use ConvTasNet
 
-    # PITLossWrapper works with any loss function.
     loss = PITLossWrapper(pairwise_neg_sisdr, pit_from="pw_mtx")
-
     optimizer = optim.Adam(model.parameters(), lr=1e-3)
-
     system = System(model, optimizer, loss, train_loader, val_loader)
 
-    # Train for 1 epoch using a single GPU. If you're running this on Google Colab,
-    # be sure to select a GPU runtime (Runtime → Change runtime type → Hardware accelarator).
     trainer = Trainer(max_epochs=1, gpus=1)
     trainer.fit(system)
 
-    #wav = "./twoSpeakers.wav"
-    #model.separate(wav, force_overwrite=True)
     return model
 
 if __name__ == "__main__":
@@ -50,5 +42,3 @@ if __name__ == "__main__":
 
     wav = "twoSpeakers.wav"
     model.separate(wav, force_overwrite=True)
-
-
