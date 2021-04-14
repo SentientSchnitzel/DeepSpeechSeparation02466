@@ -23,4 +23,6 @@ system = System(model=model, loss_func=loss_func, optimizer=optimizer,
 trainer = pl.Trainer(fast_dev_run=True)
 trainer.fit(system)
 
-#ff
+
+
+# Nico og Kristine er seje rejer !!!
