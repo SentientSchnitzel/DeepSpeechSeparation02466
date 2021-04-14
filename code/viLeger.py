@@ -7,3 +7,4 @@ if train == True:
 wav = "./twoSpeakers.wav"
 model.separate(wav, force_overwrite=True)
 
+# vi laver laber
