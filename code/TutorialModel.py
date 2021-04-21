@@ -22,7 +22,3 @@ system = System(model=model, loss_func=loss_func, optimizer=optimizer,
 # Define lightning trainer, and train
 trainer = pl.Trainer(fast_dev_run=True)
 trainer.fit(system)
-
-
-
-# Nico og Kristine er seje rejer !!!

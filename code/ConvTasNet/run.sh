@@ -19,8 +19,8 @@ python_path=python
 # ./run.sh --stage 3 --tag my_tag --task sep_noisy --id 0,1
 
 # General
-stage=0  # Controls from which stage to start
-tag=""  # Controls the directory name associated to the experiment
+stage=3  # Controls from which stage to start
+tag="ConvTasNet"  # Controls the directory name associated to the experiment
 # You can ask for several GPUs using id (passed to CUDA_VISIBLE_DEVICES)
 id=$CUDA_VISIBLE_DEVICES
 out_dir=librimix # Controls the directory name associated to the evaluation results inside the experiment directory
@@ -31,7 +31,7 @@ n_repeats=3
 mask_act=relu
 # Training config
 epochs=200
-batch_size=24
+batch_size=2
 num_workers=4
 half_lr=yes
 early_stop=yes
