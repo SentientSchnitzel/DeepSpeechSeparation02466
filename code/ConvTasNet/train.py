@@ -21,8 +21,6 @@ from asteroid.losses import PITLossWrapper, pairwise_neg_sisdr
 # By default train.py will use all available GPUs. The `id` option in run.sh
 # will limit the number of available GPUs for train.py .
 
-# jsut a lil change
-
 parser = argparse.ArgumentParser()
 parser.add_argument("--exp_dir", default="exp/tmp", help="Full path to save best validation model")
 

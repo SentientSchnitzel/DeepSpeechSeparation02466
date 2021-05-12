@@ -1,4 +1,4 @@
-from ViPrøver import *
+from ViProever import *
 train = True
 if train == True:
     train, val = loader()
@@ -6,7 +6,3 @@ if train == True:
 
 wav = "./twoSpeakers.wav"
 model.separate(wav, force_overwrite=True)
-
-# vi laver laber
-
-# hej du er grim
