@@ -1,0 +1,6 @@
+mixture_ID,mixture_path,source_1_path,source_2_path,length
+84-121123-0001_5895-34629-0002,./data/wav8k/min/dev_test/mix_clean/84-121123-0001_5895-34629-0002.wav,./data/wav8k/min/dev_test/s1/84-121123-0001_5895-34629-0002.wav,./data/wav8k/min/dev_test/s2/84-121123-0001_5895-34629-0002.wav,31400.0
+84-121123-0004_2428-83699-0000,./data/wav8k/min/dev_test/mix_clean/84-121123-0004_2428-83699-0000.wav,./data/wav8k/min/dev_test/s1/84-121123-0004_2428-83699-0000.wav,./data/wav8k/min/dev_test/s2/84-121123-0004_2428-83699-0000.wav,35200.0
+84-121123-0004_3000-15664-0014,./data/wav8k/min/dev_test/mix_clean/84-121123-0004_3000-15664-0014.wav,./data/wav8k/min/dev_test/s1/84-121123-0004_3000-15664-0014.wav,./data/wav8k/min/dev_test/s2/84-121123-0004_3000-15664-0014.wav,35200.0
+84-121123-0005_3536-23268-0024,./data/wav8k/min/dev_test/mix_clean/84-121123-0005_3536-23268-0024.wav,./data/wav8k/min/dev_test/s1/84-121123-0005_3536-23268-0024.wav,./data/wav8k/min/dev_test/s2/84-121123-0005_3536-23268-0024.wav,50800.0
+84-121123-0008_3081-166546-0045,./data/wav8k/min/dev_test/mix_clean/84-121123-0008_3081-166546-0045.wav,./data/wav8k/min/dev_test/s1/84-121123-0008_3081-166546-0045.wav,./data/wav8k/min/dev_test/s2/84-121123-0008_3081-166546-0045.wav,56120.0
