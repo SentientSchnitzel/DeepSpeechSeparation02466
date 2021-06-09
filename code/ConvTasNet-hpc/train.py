@@ -23,7 +23,7 @@ from asteroid.losses import PITLossWrapper, pairwise_neg_sisdr
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--exp_dir", default="exp/tmp", help="Full path to save best validation model")
-parser.add_argument("--conf_file", default="conf.yml", help="Name of configuration file (conf___.yml)")
+parser.add_argument("--conf_path", default="conf.yml", help="Name of configuration file (conf___.yml)")
 parser.add_argument("--resume_path", default=None, help="Choose path containing resume_checkpoint to start model from (.ckpt)") # added key to resume from checkpoint
 
 def main(conf):
@@ -148,7 +148,8 @@ if __name__ == "__main__":
     # We start with opening the config file conf.yml as a dictionary from
     # which we can create parsers. Each top level key in the dictionary defined
     # by the YAML file creates a group in the parser.
-    with open("local/conf.yml") as f:
+    conf_path = parser.parse_args().conf_path
+    with open(os.path.join("local", conf_path)) as f:
         def_conf = yaml.safe_load(f)
     parser = prepare_parser_from_dict(def_conf, parser=parser)
     # Arguments are then parsed into a hierarchical dictionary (instead of
@@ -160,5 +161,3 @@ if __name__ == "__main__":
     arg_dic, plain_args = parse_args_as_dict(parser, return_plain_args=True)
     pprint(arg_dic)
     main(arg_dic)
-
-
