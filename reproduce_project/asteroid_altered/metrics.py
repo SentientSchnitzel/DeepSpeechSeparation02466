@@ -220,7 +220,7 @@ class WERTracker:
             See librimix/ConvTasNet recipe.
     """
 
-    def __init__(self, model_name, trans_df):
+    def __init__(self, model_name, trans_df, use_gpu: str=True):
 
         from espnet2.bin.asr_inference import Speech2Text
         from espnet_model_zoo.downloader import ModelDownloader
@@ -228,10 +228,11 @@ class WERTracker:
 
         self.model_name = model_name
         d = ModelDownloader()
+        device = 'cuda' if use_gpu and torch.cuda.is_available() else 'cpu'
         self.asr_model = Speech2Text(
             **d.download_and_unpack(model_name),
             beam_size=20, # default
-            device="cpu", # can be changed to 'cuda' for use in GPUs
+            device=device, # Changes to 'cuda' if a CUDA device is available per default
         )
         self.input_txt_list = []
         self.clean_txt_list = []
