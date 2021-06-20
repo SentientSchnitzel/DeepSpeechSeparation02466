@@ -1,5 +1,9 @@
 #!/bin/bash
 
-python -m pip install . asteroid_altered/-e .
+# Install "special" version of asteroid, modified to accept CUDA in WER eval.
+cd ./asteroid
+python -m pip install -e .
+cd ..
 
-sleep 5
+# Install regular versions of packages.
+python -m pip install -r requirements.txt
