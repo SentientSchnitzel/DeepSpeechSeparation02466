@@ -12,8 +12,5 @@ current_dir=$(pwd)
 # git clone https://github.com/JorisCos/LibriMix
 
 # Run generation script
-#echo $storage_dir
-#sleep 5
-
 cd LibriMix
 . generate_librimix.sh $storage_dir

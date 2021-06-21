@@ -8,9 +8,6 @@ set -o pipefail
 # this is where data will be loaded to
 storage_dir=../dataset
 
-#echo $storage_dir
-#sleep 5
-
 sample_rate=8000
 mode=max
 n_src=2
