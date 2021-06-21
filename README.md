@@ -1,6 +1,6 @@
 
 ## Installation
-Clone the repo and run the bash script installation.sh. \
+Clone the repo and run the bash script [installation.sh](./reproduce_project/installation.sh). \
 This contains the installation of the modified Asteroid and the dafault ESPnet.
 ```bash
 # Clone repo
