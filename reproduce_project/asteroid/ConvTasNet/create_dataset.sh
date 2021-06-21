@@ -6,7 +6,10 @@ set -o pipefail
 
 # Storage must be same in this script as in the 'run' script.
 # this is where data will be loaded to
-storage_dir=$(PWD)
+storage_dir=../dataset
+
+#echo $storage_dir
+#sleep 5
 
 sample_rate=8000
 mode=max
