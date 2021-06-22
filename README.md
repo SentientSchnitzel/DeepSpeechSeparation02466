@@ -16,3 +16,6 @@ To only get this dataset (~60GB) and not the full LibriMix (~500GB), the [data g
 
 Instructions on wget for downloading from webpages \
 https://builtvisible.com/download-your-website-with-wget/
+
+download git bash
+https://git-scm.com/download/win
