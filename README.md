@@ -23,3 +23,10 @@ https://git-scm.com/download/win
 [dataset](https://nordictankers-my.sharepoint.com/:f:/g/personal/ksc_molnt_com/EplfAMci9nRAgLZIz8pHUL4BoDk6edAWpkhlQFXSptFswA?e=5%3aLP5BRj&at=9)
 
 Password: SpeechProject2021
+
+###Common problems
+Assert that packages fulfill the hard requirement:
+```
+torch==1.8.1
+torchaudio==0.8.1
+```
