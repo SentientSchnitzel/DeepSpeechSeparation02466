@@ -15,8 +15,8 @@ Make sure that Microsoft C++ Build Tools 14.0+ is installed. \
 
 Make sure you can run shell scripts (.sh) \
 
-Otherwise, download git bash \
-https://git-scm.com/download/win
+Otherwise, download Windows git bash \
+[git bash](https://git-scm.com/download/win)
 
 ### Downloading the dataset
 The project relies on Libri2Mix with sample rate 8k, max-mode and train-100.\
