@@ -10,9 +10,13 @@ git clone https://github.com/SentientSchnitzel/...
 installation.sh
 ```
 
-Make sure that Microsoft C++ Build Tools 14.0+ is installed
+Make sure that Microsoft C++ Build Tools 14.0+ is installed. \
 [Most recent build tools installer](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 
+Make sure you can run shell scripts (.sh) \
+
+Otherwise, download git bash \
+https://git-scm.com/download/win
 
 ### Downloading the dataset
 The project relies on Libri2Mix with sample rate 8k, max-mode and train-100.\
@@ -21,8 +25,6 @@ To only get this dataset (~60GB) and not the full LibriMix (~500GB), the [data g
 Instructions on wget for downloading from webpages \
 https://builtvisible.com/download-your-website-with-wget/
 
-download git bash
-https://git-scm.com/download/win
 
 [dataset](https://nordictankers-my.sharepoint.com/:f:/g/personal/ksc_molnt_com/EplfAMci9nRAgLZIz8pHUL4BoDk6edAWpkhlQFXSptFswA?e=5%3aLP5BRj&at=9)
 
