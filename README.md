@@ -10,6 +10,10 @@ git clone https://github.com/SentientSchnitzel/...
 installation.sh
 ```
 
+Make sure that Microsoft C++ Build Tools 14.0+ is installed
+[Most recent build tools installer](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+
+
 ### Downloading the dataset
 The project relies on Libri2Mix with sample rate 8k, max-mode and train-100.\
 To only get this dataset (~60GB) and not the full LibriMix (~500GB), the [data generation script](./reproduce_project/asteroid/ConvTasNet/LibriMix/generate_librimix.sh) has been modified to only create the necessary training and test sets.
