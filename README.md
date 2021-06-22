@@ -1,3 +1,16 @@
+## Prerequisites
+This project was built on python 3.7.7 \
+Assert that the python version for use is not 3.8 or later - optimally same version. \
+[python 3.7.7](https://www.python.org/downloads/release/python-377/)
+
+Make sure that Microsoft C++ Build Tools 14.0+ is installed. \
+[Most recent build tools installer](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
+
+Make sure you can run shell scripts (.sh) \
+
+Otherwise, download Windows git bash \
+[git bash](https://git-scm.com/download/win)
+
 
 ## Installation
 Clone the repo and run the bash script [installation.sh](./reproduce_project/installation.sh). \
@@ -10,13 +23,8 @@ git clone https://github.com/SentientSchnitzel/...
 installation.sh
 ```
 
-Make sure that Microsoft C++ Build Tools 14.0+ is installed. \
-[Most recent build tools installer](https://visualstudio.microsoft.com/visual-cpp-build-tools/)
 
-Make sure you can run shell scripts (.sh) \
 
-Otherwise, download Windows git bash \
-[git bash](https://git-scm.com/download/win)
 
 ### Downloading the dataset
 The project relies on Libri2Mix with sample rate 8k, max-mode and train-100.\
