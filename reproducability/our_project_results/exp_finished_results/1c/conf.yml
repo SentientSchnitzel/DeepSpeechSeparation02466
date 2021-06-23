@@ -1,0 +1,37 @@
+data:
+  n_src: 2
+  sample_rate: 8000
+  segment: 3
+  task: sep_clean
+  train_dir: /dtu-compute/LibriMix/rmth/data/wav8k/max/train-100
+  valid_dir: /dtu-compute/LibriMix/rmth/data/wav8k/max/dev
+filterbank:
+  kernel_size: 16
+  n_filters: 512
+  stride: 8
+main_args:
+  conf_path: conf_1c.yml
+  exp_dir: exp/1c
+  help: null
+  resume_path: null
+masknet:
+  bn_chan: 128
+  causal: true
+  hid_chan: 512
+  mask_act: relu
+  n_blocks: 8
+  n_repeats: 3
+  n_src: 2
+  norm_type: cLN
+  skip_chan: 128
+optim:
+  lr: 0.001
+  optimizer: adam
+  weight_decay: 0.0
+positional arguments: {}
+training:
+  batch_size: 20
+  early_stop: true
+  epochs: 100
+  half_lr: true
+  num_workers: 4
