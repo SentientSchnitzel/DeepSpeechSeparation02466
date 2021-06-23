@@ -60,6 +60,11 @@ The folder structure should look like:
 │           .
 │   └── test_annotations.csv
 ├── exp/
+│   ├── 1c/
+│   ├── 1g/
+│   ├── 2c/
+│   .
+│   .
 ├── libri2Mix/
 │   └── wav8k/
 │       └── max/
